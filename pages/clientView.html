@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link href="/static/views.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 id="indexHeader">Loyalty Card Inc.</h1>
+
+            <a href="./index.html">
+                <!-- icon from heroicons https://heroicons.com/ -->
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    id="back"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                    />
+                </svg>
+
+                <p id="homeText">home</p>
+            </a>
+        </header>
+        <div class="twoColGrid">
+            <div id="clientView">
+                <div id="mainGrid">
+                    <div class="twoColGrid">
+                        <p>Search firms:</p>
+                        <input type="text" placeholder="search" />
+                    </div>
+                    <div id="contentContainer">
+                        <div class="twoColGrid sticky">
+                            <p class="textCenter">Firms</p>
+                            <p class="textCenter"># of punches</p>
+                        </div>
+
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">Brewed Awakening</p>
+                            <p class="textCenter">5</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">Daily Grind</p>
+                            <p class="textCenter">3</p>
+                        </div>
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">Caffeine Fix</p>
+                            <p class="textCenter">4</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">Bean Scene</p>
+                            <p class="textCenter">8</p>
+                        </div>
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">The Roasted Bean</p>
+                            <p class="textCenter">1</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">Sam's bar</p>
+                            <p class="textCenter">3</p>
+                        </div>
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">Grounds for Discussion</p>
+                            <p class="textCenter">9</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">Espresso Yourself</p>
+                            <p class="textCenter">3</p>
+                        </div>
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">Cuppa Joe</p>
+                            <p class="textCenter">7</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">The Coffee House</p>
+                            <p class="textCenter">3</p>
+                        </div>
+
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">123 Coffee</p>
+                            <p class="textCenter">4</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">JFK Airport Express</p>
+                            <p class="textCenter">1</p>
+                        </div>
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">Water&Food</p>
+                            <p class="textCenter">8</p>
+                        </div>
+                        <div class="twoColGrid border">
+                            <p class="textCenter">Tod's fishery</p>
+                            <p class="textCenter">1</p>
+                        </div>
+                        <div class="twoColGrid border odd">
+                            <p class="textCenter">The Music Bar</p>
+                            <p class="textCenter">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="QRCodeContainer">
+                <img
+                    src="/static/img/sampleQQCode.png"
+                    width="300px"
+                    height="auto"
+                />
+                <p id="IDText">
+                    <span class="someBold">ID:</span> SampleID1234
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

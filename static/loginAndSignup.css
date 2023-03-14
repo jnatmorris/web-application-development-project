@@ -1,0 +1,126 @@
+#loginContainer {
+    margin: 16vh 37vw 0vh 37vw;
+    height: fit-content;
+    background-color: white;
+    padding: 5px 15px 10px 15px;
+    border: 1.5px solid lightgray;
+    border-radius: 8px;
+    filter: drop-shadow(2px 1px 0.1px rgba(58, 58, 58, 0.09));
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#indexHeader {
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+
+#back {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5vw;
+}
+
+svg:active {
+    scale: 90%;
+}
+
+hr {
+    border: 0;
+    width: 100%;
+    background-color: lightgray;
+    height: 1.5px;
+    margin: 0vh 0vw 2vh 0vw;
+}
+
+header {
+    margin: 2vh 8vw 0vh 8vw;
+}
+
+p {
+    margin: 0 0 0 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 2vh;
+}
+
+#loginSignupTitle {
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+#loginSignupGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2vh 0vw 4vh 0vw;
+}
+
+label {
+    padding-bottom: 1vh;
+    font-size: 17px;
+    color: rgb(59, 59, 59);
+}
+
+form {
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.textInput {
+    font-size: medium;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
+    border: 1px solid lightgray;
+    outline: 0px;
+    filter: drop-shadow(0.25px 0.25px 0.5px gray);
+}
+
+input:focus {
+    border: 1px solid rgb(3, 83, 188);
+    outline: 1px solid rgb(3 83 188);
+}
+
+button {
+    background-color: rgba(3, 83, 189, 0.9);
+    border-radius: 7px;
+    color: white;
+    border: 0px;
+    font-size: 15px;
+    padding: 8px 0px 8px 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(3, 83, 188, 0.7);
+    scale: 97%;
+    border-radius: 5px;
+}
+
+button:active {
+    border-radius: 5px;
+    scale: 95%;
+}
+
+#forgotP {
+    cursor: pointer;
+    font-size: small;
+    color: rgb(17, 17, 232);
+    margin: 0px 0px 10px 0px;
+}
+
+#forgotP:active {
+    scale: 98%;
+}
+
+svg:hover {
+    scale: 95%;
+}

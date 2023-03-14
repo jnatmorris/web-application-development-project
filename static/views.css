@@ -1,0 +1,113 @@
+#mainContent {
+    margin: 15vh 30vw 0vh 30vw;
+    padding: 5px 15px 10px 15px;
+    border: 1.5px solid gray;
+    border-radius: 8px;
+}
+
+#clientView {
+    margin: 15vh 2vw 0vh 8vw;
+    padding: 5px 15px 10px 15px;
+    border: 1.5px solid gray;
+    border-radius: 8px;
+}
+
+#indexHeader {
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+
+#mainGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.border {
+    border-bottom: 2px solid gray;
+}
+
+.twoColGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+#contentContainer {
+    border: 1.5px solid rgb(82, 82, 82);
+    border-radius: 8px;
+}
+
+.itemsCenter {
+    place-self: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+.someBold {
+    font-size: larger;
+    font-weight: 700;
+}
+
+#IDText {
+    padding-left: 8%;
+    font-size: x-large;
+    color: rgb(82, 82, 82);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    margin: 2vh 8vw 0vh 8vw;
+}
+
+.odd {
+    background-color: lightgray;
+}
+
+.sticky {
+    position: sticky;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    border-bottom: 2px solid black;
+}
+
+#back {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5vw;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 2vh;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+svg:active {
+    color: red;
+}
+
+#QRCodeContainer {
+    place-self: center;
+}
+
+svg:hover {
+    scale: 95%;
+}

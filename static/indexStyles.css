@@ -1,0 +1,115 @@
+body {
+    margin: 2vh 15vw 0vh 15vw;
+    font-family: sans-serif;
+}
+
+#headerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+#indexHeader {
+    justify-self: start;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+
+#loginButton {
+    justify-self: end;
+    height: fit-content;
+    background-color: rgba(3, 83, 189, 0.9);
+
+    border-radius: 10px;
+    padding: 8px 8px 8px 8px;
+    font-size: large;
+    color: rgb(248 250 252);
+    border: 0;
+}
+
+#loginButton:hover {
+    scale: 95%;
+    background-color: rgba(3, 83, 188, 0.7);
+}
+
+a {
+    text-decoration: none;
+}
+
+#mainContent {
+    margin: 20vh 0 0 0vw;
+}
+
+#centerContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+img:hover {
+    scale: 105%;
+    transform: translate(35px);
+    filter: drop-shadow(3px 4px 20px gray);
+}
+
+.peopleLearn {
+    background-color: seashell;
+    border-radius: 15px;
+    width: fit-content;
+    filter: drop-shadow(3px 4px 6px lightgray);
+    padding: 10px 20px 10px 20px;
+}
+
+#placeEnd {
+    justify-self: end;
+}
+
+#mainGraphic {
+    align-items: center;
+    justify-self: end;
+    border-radius: 15px;
+    filter: drop-shadow(2px 3px 5px gray);
+}
+
+#howItWorksGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#howItWorks {
+    margin: 28vh 0vh 5vh 0vh;
+    padding: 1vh 5vw 4vh 5vw;
+    border-radius: 15px;
+    background-color: wheat;
+}
+
+li {
+    font-size: larger;
+    margin: 4px 0px 4px 0px;
+}
+
+p {
+    color: rgb(59, 59, 59);
+}
+
+.pTagStyle {
+    line-height: 1.85rem;
+    font-size: 1.4rem;
+}
+
+#centerContentHeader {
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: rgb(77, 77, 77);
+}
+
+#howItWorksHeader {
+    padding: 5px 0px 5px 0px;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
