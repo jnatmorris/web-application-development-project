@@ -84,11 +84,6 @@ form {
     filter: drop-shadow(0.25px 0.25px 0.5px gray);
 }
 
-input:focus {
-    border: 1px solid rgb(3, 83, 188);
-    outline: 1px solid rgb(3 83 188);
-}
-
 button {
     background-color: rgba(3, 83, 189, 0.9);
     border-radius: 7px;
@@ -96,18 +91,12 @@ button {
     border: 0px;
     font-size: 15px;
     padding: 8px 0px 8px 0px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: rgba(3, 83, 188, 0.7);
-    scale: 97%;
+.valid:active {
     border-radius: 5px;
-}
-
-button:active {
-    border-radius: 5px;
-    scale: 95%;
+    scale: 98%;
+    transform: all;
 }
 
 #forgotP {

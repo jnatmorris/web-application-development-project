@@ -15,11 +15,14 @@ body {
     color: rgb(53, 53, 53);
 }
 
+#displayNoneBody {
+    display: none;
+}
+
 #loginButton {
     justify-self: end;
     height: fit-content;
     background-color: rgba(3, 83, 189, 0.9);
-
     border-radius: 10px;
     padding: 8px 8px 8px 8px;
     font-size: large;
@@ -44,12 +47,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-}
-
-img:hover {
-    scale: 105%;
-    transform: translate(35px);
-    filter: drop-shadow(3px 4px 20px gray);
 }
 
 .peopleLearn {

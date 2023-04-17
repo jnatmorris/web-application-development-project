@@ -5,7 +5,9 @@
         <title>Login & Signup</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="../static/loginAndSignup.css" rel="stylesheet" />
+        <link href="../static/styles/loginAndSignup.css" rel="stylesheet" />
+        <script src="../static/js/jquery.js"></script>
+        <script src="../static/js/login.js"></script>
     </head>
 
     <body>
@@ -34,16 +36,18 @@
             </a>
         </header>
         <div id="loginContainer">
-            <h1 id="loginSignupTitle">Login / Signup</h1>
+            <h1 id="loginSignupTitle">Login & Signup</h1>
 
-            <form>
-                <label for="username">Username</label>
+            <form id="form">
+                <label for="username" id="Email">Email</label>
                 <input placeholder="Username" id="username" class="textInput" />
+
+                <p id="InvalidEmail">Invalid Email</p>
                 <label for="password">Password</label>
                 <input placeholder="password" id="password" class="textInput" />
                 <hr />
                 <p id="forgotP">forgot password</p>
-                <button type="submit">Login \ Signup</button>
+                <button id="submitBtn" type="submit">Login \ Signup</button>
             </form>
         </div>
     </body>

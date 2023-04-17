@@ -6,7 +6,7 @@
 }
 
 #clientView {
-    margin: 15vh 2vw 0vh 8vw;
+    margin: 0vh 8vw 0vh 8vw;
     padding: 5px 15px 10px 15px;
     border: 1.5px solid gray;
     border-radius: 8px;
@@ -29,6 +29,19 @@
 }
 
 .twoColGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.threeColGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.twoMainColGrid {
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;

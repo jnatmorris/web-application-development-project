@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Client View</title>
-        <link href="../static/views.css" rel="stylesheet" />
+        <link href="../static/styles/views.css" rel="stylesheet" />
+        <script src="../static/js/clientView.js"></script>
     </head>
     <body>
         <header>
@@ -31,90 +32,24 @@
                 <p id="homeText">home</p>
             </a>
         </header>
-        <div class="twoColGrid">
+        <div class="twoMainColGrid">
             <div id="clientView">
                 <div id="mainGrid">
                     <div class="twoColGrid">
                         <p>Search firms:</p>
-                        <input type="text" placeholder="search" />
+                        <input
+                            type="text"
+                            id="search"
+                            oninput="sortArray(this.value)"
+                            placeholder="search"
+                        />
                     </div>
-                    <div id="contentContainer">
-                        <div class="twoColGrid sticky">
-                            <p class="textCenter">Firms</p>
-                            <p class="textCenter"># of punches</p>
-                        </div>
-
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">Brewed Awakening</p>
-                            <p class="textCenter">5</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">Daily Grind</p>
-                            <p class="textCenter">3</p>
-                        </div>
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">Caffeine Fix</p>
-                            <p class="textCenter">4</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">Bean Scene</p>
-                            <p class="textCenter">8</p>
-                        </div>
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">The Roasted Bean</p>
-                            <p class="textCenter">1</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">Sam's bar</p>
-                            <p class="textCenter">3</p>
-                        </div>
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">Grounds for Discussion</p>
-                            <p class="textCenter">9</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">Espresso Yourself</p>
-                            <p class="textCenter">3</p>
-                        </div>
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">Cuppa Joe</p>
-                            <p class="textCenter">7</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">The Coffee House</p>
-                            <p class="textCenter">3</p>
-                        </div>
-
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">123 Coffee</p>
-                            <p class="textCenter">4</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">JFK Airport Express</p>
-                            <p class="textCenter">1</p>
-                        </div>
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">Water&Food</p>
-                            <p class="textCenter">8</p>
-                        </div>
-                        <div class="twoColGrid border">
-                            <p class="textCenter">Tod's fishery</p>
-                            <p class="textCenter">1</p>
-                        </div>
-                        <div class="twoColGrid border odd">
-                            <p class="textCenter">The Music Bar</p>
-                            <p class="textCenter">3</p>
-                        </div>
-                    </div>
+                    <div id="contentContainer"></div>
                 </div>
             </div>
 
             <div id="QRCodeContainer">
-                <img
-                    src="../static/img/sampleQRCode.png"
-                    width="300px"
-                    height="auto"
-                />
+                <img src="" width="300px" height="auto" id="qrCode" />
                 <p id="IDText">
                     <span class="someBold">ID:</span> SampleID1234
                 </p>
