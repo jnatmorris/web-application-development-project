@@ -70,3 +70,59 @@ window.onload = () => {
     // on loading, run the function to set the button
     submitBtnFn();
 };
+
+// allow for the logging in / creation of a new user
+const handleSubmitBtn = async () => {
+    const usernameInput = document.getElementById("username").value;
+    const passwordInput = document.getElementById("password").value;
+
+    // get all of the users
+    const loginFetch = await fetch(
+        "http://127.0.0.1:8090/api/collections/serviceUsers/records"
+    );
+
+    // get json
+    const { items } = await loginFetch.json();
+
+    // boolean variable to test if did find the user or not
+    var didFind = false;
+
+    items.forEach(async ({ email, password, isUser, id }) => {
+        // check if user exists with password and username
+        if (usernameInput === email && passwordInput === password) {
+            didFind = true;
+
+            // user exists send to client view, else they are a firm
+            window.location.href = `http://localhost:3000/pages/${
+                isUser ? "clientView" : "firmView"
+            }?id=${id}`;
+        }
+    });
+
+    // if user/shop does not have a sign up, then make a user for entered data
+    if (!didFind) {
+        const newUserRes = await fetch(
+            "http://127.0.0.1:8090/api/collections/serviceUsers/records",
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+                body: JSON.stringify({
+                    // make the name the portion before the @ symbol of the email
+                    name: usernameInput.split("@")[0],
+                    email: usernameInput,
+                    password: passwordInput,
+                    isUser: true,
+                    punches: JSON.stringify([]),
+                }),
+            }
+        );
+
+        // get the returned id
+        const { id } = await newUserRes.json();
+
+        // send new user to their page
+        window.location.href = `http://localhost:3000/pages/clientView?id=${id}`;
+    }
+};
