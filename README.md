@@ -1,6 +1,6 @@
 # web-application-development-project
 
-This project uses [pocketbase](https://pocketbase.io/) for the back-end database. It is required to install it and import the schema provided in pbSchema.json to utilize the database functionalities.
+This project uses [pocketbase](https://pocketbase.io/) for the back-end database. It is required to install it and import the schema provided in pbSchema.json to utilize the database functionalities. These functionalities will not work within github pages.
 
 ### Github repo
 
